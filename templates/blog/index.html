@@ -8,7 +8,7 @@
     /* Outer background color for the page */
     
         body {
-        background-image: url("{% static 'back.jpg' %}"); /* Adjust path as necessary */
+            background-image: url("{% get_static_prefix %}media/background.jpg"); /* Adjust path as necessary */
         background-size: cover;  /* Cover the whole page */
         background-attachment: fixed; /* Keeps the image fixed as you scroll */
         background-position: center; /* Center the image */
