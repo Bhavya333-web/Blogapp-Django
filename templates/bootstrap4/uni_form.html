@@ -1,0 +1,12 @@
+{% load crispy_forms_tags %}
+<form method="post" novalidate>
+    {% csrf_token %}
+    <div class="form-group">
+        {% for field in form %}
+            <div class="form-row">
+                {{ field.label_tag }} {{ field|as_crispy_field }}
+            </div>
+        {% endfor %}
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

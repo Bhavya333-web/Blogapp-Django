@@ -29,6 +29,11 @@ SECRET_KEY = 'ql&qi^8lb2=176&((yt-9zvs784ka^toyibq*9)gd1i40(es_+'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
 
 
 # Application definition
@@ -43,6 +48,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
+    'crispy_bootstrap4',
+    
 ]
 
 MIDDLEWARE = [
