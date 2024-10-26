@@ -11,6 +11,11 @@
                         <div class="col-md-4">
                             <img class="img-thumbnail" src="{{ post.author.profilemodel.image.url }}" alt="profile-img">
                         </div>
+                        <style>
+                            body {
+                                background-color: skyblue; /* Change to your desired color */
+                            }
+                        </style>
                         <div class="col-md-8">
                             <small>{{ post.date_created }}</small>
                             {% if post.author == request.user %}
